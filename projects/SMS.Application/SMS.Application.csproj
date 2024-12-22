@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\Courses\Commands\" />
+      <Folder Include="Features\Courses\Constants\" />
+      <Folder Include="Features\Courses\Profiles\" />
+      <Folder Include="Features\Courses\Queries\" />
+      <Folder Include="Features\Courses\Rules\" />
+      <Folder Include="Features\DepartmentManagers\" />
+      <Folder Include="Features\Departments\" />
+      <Folder Include="Features\Grades\Commands\" />
+      <Folder Include="Features\Grades\Constants\" />
+      <Folder Include="Features\Grades\Profiles\" />
+      <Folder Include="Features\Grades\Queries\" />
+      <Folder Include="Features\Grades\Rules\" />
+      <Folder Include="Features\Instructors\Commands\" />
+      <Folder Include="Features\Instructors\Constants\" />
+      <Folder Include="Features\Instructors\Profiles\" />
+      <Folder Include="Features\Instructors\Queries\" />
+      <Folder Include="Features\Instructors\Rules\" />
+      <Folder Include="Features\Students\Commands\" />
+      <Folder Include="Features\Students\Constants\" />
+      <Folder Include="Features\Students\Profiles\" />
+      <Folder Include="Features\Students\Queries\" />
+      <Folder Include="Features\Students\Rules\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\core\Core.Persistence\Core.Persistence.csproj" />
+      <ProjectReference Include="..\SMS.Domain\SMS.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

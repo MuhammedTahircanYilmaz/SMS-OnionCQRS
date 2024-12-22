@@ -6,6 +6,7 @@ public sealed class Course : Entity<Guid>
 {
     public string CourseCode { get; set; } = null!;
     public string Name { get; set; } = null!;
+    public float Credits { get; set; }
     public long DepartmentId { get; set; }
     public Department Department { get; set; } = null!;
     public ICollection<Student> Students { get; set; } = null!;

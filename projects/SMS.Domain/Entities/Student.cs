@@ -2,8 +2,9 @@
 
 public sealed class Student : UserEntity
 {
-    public Guid StudentId { get; set; }
+    public int StudentIdNumber { get; set; }
     public float Gpa { get; set; }
+    public string YearOfStudy { get; set; }
     public ICollection<Course>? Courses { get; set; }
     public Instructor? Advisor { get; set; }
     public int DepartmentId { get; set; }

@@ -2,7 +2,7 @@
 
 namespace Core.Security.Entities;
 
-public class User : Entity<int>
+public class User : Entity<Guid>
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
@@ -42,7 +42,7 @@ public class User : Entity<int>
     }
 
     public User(
-        int id,
+        Guid id,
         string firstName,
         string lastName,
         string email,

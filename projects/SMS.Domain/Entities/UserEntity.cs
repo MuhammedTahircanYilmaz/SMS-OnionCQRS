@@ -6,5 +6,6 @@ namespace SMS.Domain.Entities;
 public class UserEntity : User
 {
     public string TRIN { get; set; }
+    public DateTime Birthday { get; set; }
     public Sex Gender { get; set; }
 }
